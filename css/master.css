@@ -1,0 +1,414 @@
+body {
+    background-color: rgba(225,229,231,255);
+    color: black;
+    overflow: auto;
+    margin: 0px;
+    scroll-behavior: smooth;
+    padding-top: 100px;
+}
+
+.header-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 90px;
+    position: fixed;
+    background-color: white;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    border-bottom: solid 1px gray;
+}
+.left-section{
+    width: 600px;
+    min-width: 300px;
+}
+.main-logo{
+    padding-left: 25px;
+}
+.right-section{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 46px;
+    flex-shrink: 0;
+    min-width: 500px;
+}
+.right-section a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    color: #000019;
+    text-transform: capitalize;
+}
+.right-section a:hover{
+    color: #ec5b53;
+}
+
+.home-section{
+background-color: rgba(225,229,231,255);
+    display: flex;
+    flex-direction: row;
+}
+.page-content{
+    max-width: 800px;
+    padding-top: 5%;
+    padding-left: 10%;
+    flex: 1;
+    padding-bottom: 30px;
+}
+.salute{
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #ec5b53;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+.role-name{
+    font-size: 60px;
+    font-weight: 700;
+    color: #002d5b;
+    text-transform: capitalize;
+    font-family: "Rufina", serif;
+    font-style: normal;
+}
+.description{
+    color: #464d65;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 0px;
+    text-align: justify;
+}
+.hire-me-btn{
+    height: 46px;
+    width: 200px;
+    color: white;
+    background-color: #ec5b53;
+    border: none;
+    border-radius: 3px;
+    margin-top: 36px;
+    transition: background-color 0.3s linear;
+}
+.hire-me-btn:hover{
+    background-color: #f22015;
+}
+.profile{
+    width: 590px;
+    height: 600px;
+    object-fit: cover;
+    object-position: top;
+    background: transparent;
+    padding-left: 15px;
+}
+
+.about-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 70px;
+    background-color: rgba(225,229,231,255);
+}
+.background, .passion, .aspiration{
+    background-color: rgba(225,229,231,255);
+    margin-top: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, box-shadow 0.4s;
+}
+.background h2, .passion h2, .aspiration h2{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 10px;
+    font-family: "Rufina", serif;
+
+}
+.background p, .passion p, .aspiration p{
+    color: #464d65;
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 10px;
+    text-align: justify;
+}
+.about-header{
+    font-size: 36px;
+    font-weight: 500;
+    color: #002d5b;
+    text-transform: capitalize;
+    font-family: "Rubik", sans-serif;
+    padding-left: 10px;
+}
+.background:hover, .passion:hover, .aspiration:hover{
+    box-shadow: inset 0.3px 0.3px 10px 1px #ec5b53;
+    background-color: #ffffff;
+}
+
+.project-section, .skill-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(225,229,231,255);
+    padding: 20px;
+    padding-left: 0;
+    padding-top: 70px;
+}
+.project-greet, .skill-greet{
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 20px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    font-family: "Rufina", serif;
+}
+.project-list-and-add{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.project-list{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    margin: 20px;
+}
+.project-list-items{
+    width: 300px;
+    height: 350px;
+    border: solid 1px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    min-width: 280px;
+}
+.project-list-items h5{
+    font-size: 20px;
+    font-weight: 100px;
+    color: #002d5b;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.project-list-items p{
+    color: #464d65;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 10px;
+    text-align: justify;
+}
+.project-list-items button{
+    width: 100px;
+    height: 40px;
+    margin-left: 34px;
+    background-color: #ec5b53;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s linear;
+}
+.project-list-items button:hover{
+    background-color: #f22015;
+}
+.project-list-items button a{
+    text-decoration: none;
+    color: white;
+}
+.project-add-btn{
+    padding: 160px 10px 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(225,229,231,0.5);
+}
+.project-add-btn button{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    border: solid 1px;
+    font-size: 25px;
+    border-color: #ec5b53;
+    color: #ec5b53;
+    transition: height 0.4s, width 0.4s, box-shadow 0.4s;
+}
+.project-add-btn button:hover{
+    box-shadow: 0.7px 0.7px 20px 2px #ec5b53;
+}
+
+.skill-section{
+    padding-top: 70px;
+}
+.skill-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.skill-list-items{
+    width: 1300px;
+    height: 300px;
+    border: solid 1px #ec5b53;
+    display: flex;
+    flex-direction: row;
+    min-width: 1000px;
+
+    padding: 15px;
+    margin: 10px;
+    margin-left: 100px;
+
+    transition: padding 0.15s,
+      margin 0.15s;
+}
+.skill-list-items:hover {
+    padding: 25px;
+    margin: 0px;
+    margin-left: 90px;
+    box-shadow: 0.3px 0.3px 10px 1px #ec5b53;
+  }
+.skill-list-items-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.skill-list-items-text h5{
+    font-size: 40px;
+    font-weight: 100px;
+    color: #002d5b;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.skill-list-items-text p{
+    color: #464d65;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 10px;
+    text-align: justify;
+}
+.skill-list-items-image img{
+    width: 800px;
+    height: 300px;
+    object-fit: fill;
+}
+
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    background-color: white;
+    padding-bottom: 80px
+}
+.contact-greet{
+    margin-left: 120px;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.2;
+}
+#message{
+    display: block;
+    width: 610px;
+    height: 189.1px;
+    margin-left: 120px;
+    padding: 6px 18px 6px 18px;
+    border: 1px solid #e5e6e9;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #495057;
+    overflow: auto;
+    resize: vertical;
+    margin-bottom: 40px;
+}
+#name{
+    margin-left: 120px;
+    width: 250px;
+    height: 48px;
+    margin-bottom: 40px;
+    border: 1px solid #e5e6e9;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #495057;
+    padding: 6px 12px 6px 18px;
+}
+#email-address{
+    width: 310px;
+    height: 48px;
+    margin-bottom: 40px;
+    border: 1px solid #e5e6e9;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #495057;
+    padding: 6px 12px 6px 18px;
+    margin-left: 20px;
+}
+#subject{
+    display: block;
+    margin-left: 120px;
+    width: 620px;
+    height: 48px;
+    border: 1px solid #e5e6e9;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #495057;
+    padding: 6px 12px 6px 18px;
+    margin-bottom: 40px;
+}
+#send-button{
+    margin-left: 120px;
+    width: 140.32px;
+    height: 58.6px;
+    color: #ec5b53;
+    background-color: white;
+    padding: 18px 44px;
+    border: solid 1px #ec5b53;
+    font-size: 14px;
+    font-family: "Rufina", serif;
+    letter-spacing: 3px;
+    transition: background-color 0.4s, color 0.4s;
+}
+#send-button:hover{
+    background-color: #ec5b53;
+    color: white;
+}
+.contact-details{
+    display: flex;
+    flex-direction: row;
+}
+.contact-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.home, .mail, .mobile{
+    margin-left: 150px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+.home-icon img, .mobile-icon img, .email-icon img{
+    width: 30px;
+    height: 30px;
+}
+
+.contact-info-detail-head, .contact-info-detail-sub{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.contact-info-detail-head{
+    font-size: 16px;
+    font-family: "Rufina", serif;
+    color: #2a2a2a;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    padding-left: 20px;
+}
+.contact-info-detail-sub{
+    padding-left: 20px;
+    color: #8a8a8a;
+    font-size: 16px;
+    font-family: "Rubik", serif;
+}
