@@ -34,11 +34,6 @@ const listOfSkills = [{
     img: "images/git.png"
 },
 {
-    skilName: "Mobile App Development",
-    description: "Embark on an enchanting journey into the world of mobile app development guided by my mastery in Android Studio. As an alchemist in the realm of app creation, I seamlessly blend creativity, functionality, and user experience to craft captivating and feature-rich Android applications.",
-    img: "images/mobile.png"
-},
-{
     skilName: "Data Base",
     description: "Embark on a data-driven journey with my mastery in PostgreSQL, where databases transform into powerful engines that drive the backbone of applications. As a data architect, I orchestrate the design, optimization, and management of PostgreSQL databases to ensure robust, scalable, and efficient storage solutions.",
     img: "images/sql.png"
