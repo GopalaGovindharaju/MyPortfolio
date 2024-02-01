@@ -1,9 +1,22 @@
 const listOfProjects = [{
+    title: "Glamazon",
+    source: "https://github.com/GopalaGovindharaju/Glamazon",
+    view: "https://gopalagovindharaju.github.io/Glamazon/",
+    abstract: "AI-empowered Grooming Web App: Our AI-driven web app allows users to preview personalized grooming styles, including hairstyles, hair colors, lip shades, and eyebrows, ensuring a tailored and satisfying virtual makeover experience"
+},
+    {
     title: "Manufacturing ERP",
     source: "https://github.com/GopalaGovindharaju/MPERP",
     view: "https://gopalagovindharaju.github.io/MPERP/",
     abstract: "Manufacturing ERP (Enterprise Resource Planning) web application, designed to optimize manufacturing processes. It integrates various business processes into centralized system, that facilitates efficient management of the manufacturing process."
-},]
+},
+{
+    title: "Project Management System",
+    source: "https://github.com/GopalaGovindharaju/PMGMT",
+    view: "https://gopalagovindharaju.github.io/PMGMT/",
+    abstract: "College Project Tracker: A user-friendly system empowering staff to monitor student project progress. Streamlining collaboration, it offers a comprehensive overview, enhancing administrative insights for efficient project management."
+},
+]
 
 const listOfSkills = [{
     skilName: "Full Stack",

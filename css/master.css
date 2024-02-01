@@ -209,17 +209,18 @@ background-color: rgba(225,229,231,255);
     width: 100px;
     height: 40px;
     margin-left: 34px;
-    background-color: #ec5b53;
+    background-color: transparent;
     border: none;
-    border-radius: 4px;
-    transition: background-color 0.3s linear;
-}
-.project-list-items button:hover{
-    background-color: #f22015;
 }
 .project-list-items button a{
     text-decoration: none;
-    color: white;
+    color: #ec5b53;
+    font-size: 16px;
+}
+.project-list-items button a:hover{
+    text-decoration: none;
+    font-weight: 600;
+    color:#f22015;
 }
 .project-add-btn{
     padding: 160px 10px 10px 10px;
