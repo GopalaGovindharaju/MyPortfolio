@@ -1,7 +1,7 @@
 const listOfProjects = [{
     title: "Manufacturing ERP",
-    source: "https://github.com/dxsosoft/MPERP.git",
-    view: "projects/MPERP/MANUFACTURING__ERP_(1).pdf",
+    source: "https://github.com/GopalaGovindharaju/MPERP",
+    view: "https://gopalagovindharaju.github.io/MPERP/",
     abstract: "Manufacturing ERP (Enterprise Resource Planning) web application, designed to optimize manufacturing processes. It integrates various business processes into centralized system, that facilitates efficient management of the manufacturing process."
 },]
 
@@ -91,30 +91,7 @@ function projectScroller() {
     }
 }
 
-// script.js
-function sendEmail() {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email-address').value;
-    const subject = document.getElementById('subject').value;
-    const message = document.getElementById('message').value;
 
-    const data = { name, email, subject, message };
-
-    // Assuming you have a server endpoint to handle the email sending
-    fetch('/send-email', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Success:', data);
-        // You can handle success actions here (e.g., show a success message)
-    })
-    .catch((error) => {
-        console.error('Error:', error);
-        // Handle error (e.g., show an error message)
-    });
+function navigateToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
 }
