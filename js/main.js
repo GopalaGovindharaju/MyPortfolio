@@ -2,7 +2,7 @@ const listOfProjects = [{
     title: "Glamazon",
     source: "https://github.com/GopalaGovindharaju/Glamazon",
     view: "https://gopalagovindharaju.github.io/Glamazon/",
-    abstract: "AI-empowered Grooming Web App: Our AI-driven web app allows users to preview personalized grooming styles, including hairstyles, hair colors, lip shades, and eyebrows, ensuring a tailored and satisfying virtual makeover experience"
+    abstract: "AI-empowered Grooming Web App: Our AI-driven web app allows users to preview personalized grooming styles, including hairstyles, hair colors, lip shades, and eyebrows, ensuring a tailored and satisfying virtual makeover experience."
 },
     {
     title: "Manufacturing ERP",
@@ -44,11 +44,9 @@ function renderSkills() {
     for(let i = 0; i < listOfSkills.length; i++){
         const skillObjcts = listOfSkills[i];
         const { skilName, description, img} = skillObjcts;
-        projectHtml += `<div class="skill-list-items"><div class="skill-list-items-text">
+        projectHtml += `<div class="skill-list-items" style="background-image: url(${img});"><div class="skill-list-items-text">
         <h5>${skilName}</h5><p>${description}</p>
-        </div><div class="skill-list-items-image">
-        <img src="${img}" alt="">
-        </div>    
+        </div>  
         </div>`; 
     }
     document.querySelector(".skill-list").innerHTML = projectHtml;

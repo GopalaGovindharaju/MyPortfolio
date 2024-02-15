@@ -22,6 +22,7 @@ a{
     right: 0px;
     left: 0px;
     border-bottom: solid 1px gray;
+    z-index: 10;
 }
 .left-section{
     width: 600px;
@@ -57,7 +58,7 @@ background-color: rgba(225,229,231,255);
     flex-direction: row;
 }
 .page-content{
-    max-width: 800px;
+    
     padding-top: 5%;
     padding-left: 10%;
     flex: 1;
@@ -100,18 +101,18 @@ background-color: rgba(225,229,231,255);
     background-color: #f22015;
 }
 .profile{
-    width: 590px;
+    width: 100%;
     height: 600px;
     object-fit: cover;
     object-position: top;
     background: transparent;
-    padding-left: 15px;
+    padding-left: 50px;
 }
 
 .about-section{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-top: 70px;
     background-color: rgba(225,229,231,255);
 }
@@ -135,6 +136,7 @@ background-color: rgba(225,229,231,255);
     font-size: 16px;
     line-height: 30px;
     padding-left: 10px;
+    padding-right: 10px;
     text-align: justify;
 }
 .about-header{
@@ -181,7 +183,6 @@ background-color: rgba(225,229,231,255);
 }
 .project-list-items{
     width: 300px;
-    height: 350px;
     border: solid 1px;
     margin-left: 20px;
     display: flex;
@@ -208,9 +209,10 @@ background-color: rgba(225,229,231,255);
 .project-list-items button{
     width: 100px;
     height: 40px;
-    margin-left: 34px;
     background-color: transparent;
     border: none;
+    margin-left: 36px;
+    margin-bottom: 10%;
 }
 .project-list-items button a{
     text-decoration: none;
@@ -244,6 +246,7 @@ background-color: rgba(225,229,231,255);
 
 .skill-section{
     padding-top: 70px;
+    background-color: rgba(225,229,231,255);
 }
 .skill-list{
     display: flex;
@@ -251,13 +254,11 @@ background-color: rgba(225,229,231,255);
     justify-content: space-evenly;
 }
 .skill-list-items{
-    width: 1300px;
-    height: 300px;
+    width: 80%;
+    height: auto;
     border: solid 1px #ec5b53;
     display: flex;
     flex-direction: row;
-    min-width: 1000px;
-
     padding: 15px;
     margin: 10px;
     margin-left: 100px;
@@ -275,6 +276,8 @@ background-color: rgba(225,229,231,255);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    background-color: white;
+    backdrop-filter: blur(20px);
 }
 .skill-list-items-text h5{
     font-size: 40px;
@@ -294,9 +297,7 @@ background-color: rgba(225,229,231,255);
     text-align: justify;
 }
 .skill-list-items-image img{
-    width: 800px;
-    height: 300px;
-    object-fit: fill;
+    max-width: 100%;
 }
 
 .contact-section{
